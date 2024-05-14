@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Code to link to css file--> <link rel="stylesheet" type = "text/css" href="Css files/Regitstration_Login_page.css">
+<!--Code to call code .js file-->    <script src = "Js Files/Regitstration.js"></script>
+    <title>The Pixel Project/Registration</title>
+</head>
+<!--All code inside the nav tags below are for the navigation bar to be displayed-->
+<nav>
+    <ul>
+       <li><a href="Index.html">Home</a></li>
+       <li><a href="About_Page.html">Contact</a></li>
+       <li><a href="SoundTest.html">Listen To Rocket Sounds</a></li>
+    </ul>
+   </nav>
+
+<!--Code for the background image of this page that I also drew myself--> <style> 
+   body {
+      background-image: url(Images/Testing.png) ;
+      height:150vh;
+    
+      background-size: cover;
+      background-position: center;
+   }
+</style>
+<body> 
+    <br>
+<!--Top paragraph text color--> <h1 style =  color:aqua>  <p>The Rocket Project:Registration Forms</p> </h1>
+    <p id = "loginStatus"> Status of Login</p>
+ <!--Second paragraph's text color--> <h2 style = color:gold; >
+ <!--Second paragraph text--> <p >.</p> </h2>
+      <br>
+       <br>
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ <!--Third paragraph's text color-->   <h3 style = color:aqua;> 
+ <!--Third paragraph text--> <p>Please enter first, last name, and number of participants 
+        in the boxes below to gain access...</p>
+    </h3>
+     <br>
+    <br>
+    <br>
+<!--Code for the id that the css file will use for function checkCreds-->    <form id = "credSubmit" onsubmit = "return false">
+
+     <!--Displays the first line of the registration form-->  Enter First Name(WARNING cannot be longer than 10 characters): <input type = "text" id = "FirstNameInput"/> 
+        <br>
+        <br>
+    <!--Displays the second line of the registration form-->  Enter Surname(WARNING cannot be longer than 10 characters): <input type ="text" id = "SurNameInput"/>
+        <br>
+        <br>
+    <!--Displays the final line of the registration form-->   Enter a Number(Cannot be greater than ten): <input type = "number" id = "PasswordInput"/>
+  <!--Code for the submit button-->      <input type = "submit" onclick = "checkCreds()"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,153 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+
+nav /*navigation bar customizations */
+{
+    width:100%;
+    height:100px;
+    background-image:linear-gradient(rgb(25, 9, 48),rgb(11, 20, 46) 250%);
+    overflow: ;
+
+}
+
+
+
+ul 
+{
+
+
+}
+
+
+
+ul li  /*addition navigation styling code */
+{
+    list-style: none;
+    display:inline-block;
+    float:left;
+    line-height: 100px;
+}
+
+ul  li a /* navigation font customizations */
+{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 0 70px;
+}
+
+ul  li a:hover /* Special effects that occur when cursor is held over any of the navigation buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 aqua,
+                0 5px 50px 0 aqua inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+}
+
+
+body  /* code for the background colors */
+{
+display:block;
+justify-content: center;
+align-items: center;
+height:2800px;
+background-image:linear-gradient(rgb(27, 8, 53),rgb(148, 42, 0) 250%);
+background-repeat:no-repeat;
+}
+
+
+img /*Code for the image on website*/
+{   
+    display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    height:100vh;
+    border-radius: 6000%;
+}
+
+h1
+{
+ color:aqua;
+ font-size:420%;
+font-weight: bolder;
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2
+{
+  font-size:x-large;
+  color:orange;
+}
+
+
+
+.particles /* Code for size of the particles on screen*/
+{
+    position: relative;
+    display:flex;
+    z-index: 8;
+    padding: 0 10px;
+    width: 80%;
+}
+.particles span /*Code for the entire animations of the particles*/
+{
+    display:flow-root;
+    position:sticky;
+    
+    bottom: 20px;
+    width: 50px;
+    height: 20px;
+    background: yellow;
+    box-shadow: 0 0 0 10px goldenrod,
+    0 0 50px yellow,
+    -100px 0 gold,
+    150px 0 white;
+    margin: 0 2px;
+border-radius:80%;
+animation: animate 12s ease infinite;
+animation-duration: calc(125s / var(--1));
+    
+}
+.particles span:nth-child(even)  /* Color of the particles themselves*/
+{
+background: yellow;
+box-shadow: 0 0 10px bisque,
+0 0 50px  rebeccapurple,
+-100px 0 red,
+100px  gold;
+
+}
+@keyframes animate  /* Code for helping the particles animate*/
+{
+ 0%
+
+ {
+    transform: translateY(120vh) scale(0) rotate(0deg);
+}
+
+20%
+{
+    transform: translateY(100vh) scale(1) rotate(0deg);
+}
+100%
+{
+    transform: translateY(0vh) scale(0.5) rotate(360deg);
+}
+}
+
+
+p{
+    color:yellow;
+    font-size: large;
+   
+}

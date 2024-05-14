@@ -1,0 +1,199 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+
+nav /*navigation bar customizations */
+{
+    width:100%;
+    height:100px;
+    background-image:linear-gradient(rgb(25, 9, 48),rgb(11, 20, 46) 250%);
+    overflow: ;
+
+}
+
+
+
+ul 
+{
+
+
+}
+
+
+
+ul li  /*addition navigation styling code */
+{
+    list-style: none;
+    display:inline-block;
+    float:left;
+    line-height: 100px;
+}
+
+ul  li a /* navigation font customizations */
+{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 0 70px;
+}
+
+ul  li a:hover /* Special effects that occur when cursor is held over any of the navigation buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 aqua,
+                0 5px 50px 0 aqua inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+}
+
+
+
+h1 /*code for header one's text font */
+{
+text-align: center;
+ color:rgb(92, 255, 247);
+ font-weight: bolder;
+ text-decoration-style:double;
+ font-size: 279%;
+
+}
+
+h2 /*code for the text font that displays the computer choice, user choice, as well as the results. */
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(206, 192, 0);
+    font-size:30px;
+    border-style:double;
+    border-color: aqua;
+    font-style: italic;
+    border-radius: 2%;
+}
+
+h3 /*code for the final paragraph just above the game buttons*/
+{
+ font-size:24px;
+ font-weight: bold;
+ text-decoration: solid;
+ font-style: italic;
+}
+
+
+#countdownTimer  /*code for the countdownTimer text font*/
+{
+    font-weight: bolder;
+    font-size:28px;
+    color:gold;
+}
+
+
+body /*Code for radial background*/
+{
+background-image:linear-gradient(rgb(27, 8, 53),rgb(148, 42, 0) 90%);
+background-repeat:no-repeat;
+height:1800px;
+}
+
+img /*Code for the image on website*/
+{   display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:outset;
+    border-color: yellow;
+    width:60%;
+    height:500px;
+}
+
+
+button /*Code for button font styling and graphics */
+{
+align-content: left;
+color: rgb(0, 217, 255);
+width:240px;
+height:80px;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 25px;
+font-style: italic;
+border-radius: 20%;
+background: none;
+letter-spacing: 3px;
+font-weight:300;
+border-color: rgb(236, 200, 0);
+border-style:groove;
+overflow: hidden;
+transition:.5s;
+}
+
+
+button:focus {  
+    outline:invert;
+}
+
+button:before {  /* Code for the button's appearance before cursor is hovered over them. */
+
+content: '';
+display: block;
+position:absolute;
+background: rgba(236, 236, 0, 0.774);
+width: 300px;
+height:100px
+left:0;
+top:0;
+opacity:.4s;
+filter:blur(40px)
+transform:translateX(300px) skewX(-15deg);
+}
+
+button:after  /*Code for what happens after cursor is hovered over any buttons */
+{
+content: ''; 
+display: block;
+position:absolute;
+width: 300px;
+height:100px;
+left:0;
+top:0;
+opacity: 4s;
+filter; blur(40px);
+transform:translateX(-100px) scaleX(-15deg);
+}
+
+
+
+button:hover  /*Code for effects that occur while the cursor is hovered over any buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 aqua,
+                0 5px 50px 0 aqua inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+
+}
+
+button:hover:before  /* Code for what happens before the cursor is over any buttons */
+{
+transform:translateX(100px) skewX(-15deg);
+opacity: .4s;
+transition: .3s;
+}
+
+button:hover:after { /*Code for the effects that occur after cursor is hovered over a button */
+transform: translateX(100px) skewX(-15deg);
+opacity: .2s;
+transition: .3s;
+}
+
+.countdownTimer  /*Color for countdownTimer text */
+{
+Color:yellow;
+}
